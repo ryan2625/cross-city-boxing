@@ -1,0 +1,50 @@
+.secondBanner{
+    display: flex;
+    margin-top: 8rem;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 12rem;
+    position: relative;
+}
+
+.secondBanner::after{
+    background-color: black;
+    content: "";
+    display: block;
+    height: 100px;
+    width: 100%;
+    position: absolute;
+    bottom: -12rem;
+    clip-path: polygon(100% 0, 0 100%, 100% 100%);
+}
+
+.lorem{
+    max-width: 40%;
+}
+
+.lorem > *{
+    font-size: calc(1vw + 7px);
+}
+
+.lorem button{
+    margin-top: 2rem;
+}
+
+#fightPic{
+    max-width: 50%;
+}
+
+#catchLine{
+    position: relative;
+    margin-left: 1rem;
+}
+
+#catchLine::before{
+    content: "";
+    display: block;
+    height: 100%;
+    width: 6px;
+    left: -1rem;
+    background-color: rgb(204, 0, 0);
+    position: absolute;
+}

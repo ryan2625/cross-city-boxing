@@ -1,0 +1,50 @@
+.footer{
+    height: 300px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.firstFooter > *{
+    align-self: center;
+}
+
+.leftPosition{
+    margin-left: 3rem;
+}
+
+.rightPosition{
+    margin-right: 3rem;
+}
+
+.footerIcons{
+    display: flex;
+    list-style: none;
+    gap: 50px;
+    margin-right: 4rem;
+}
+
+.footerIcons > li > *{
+    transform: scale(2);
+    transition: all 0.5s ease;
+}
+
+.footerIcons > li > *:hover {
+    transform: translateY(-20px) scale(2.8);
+  }
+
+.firstFooter{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.footer > *{
+    color: white;
+}
+
+.legal{
+    color: rgb(225, 225, 225);
+    font-size: large;
+}

@@ -1,0 +1,51 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    width: 80%;
+    margin: auto;
+}
+
+.logo{
+    margin-left: 4rem;
+    background-image: url("../components/boxingLogo.png");
+    width: 300px;
+    height: 70px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.nav ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding-inline-start: 0px;
+    gap: 50px;
+    margin-right: 4rem;
+}
+
+.nav li{
+    display: flex;
+    align-items: center;
+}
+
+.nav a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.nav a::after{
+    content: "";
+    display: block;
+    width: 0;
+    height: 3px;
+    background-color: white;
+    transition: width .3s;
+}
+
+.nav a:hover::after{
+    width: 100%;
+}

@@ -1,0 +1,88 @@
+.mainBanner{
+    width: 100%;
+    background-color: #171717;
+    height: 700px;
+    position: relative;
+    display: grid;
+}
+
+.pictureHolder{
+    background-repeat: no-repeat;
+    max-width: 75%;
+    height: 620px;
+    background-size: cover;
+    margin-left: 25%;
+    background-image: url("../components/fightBanner.jpg");
+}
+
+.mainBanner::after{
+    content: "asd";
+    width: 100%;
+    height: 100px;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    background-color: rgb(234, 234, 234);
+    clip-path: polygon(100% 0, 0 100%, 100% 100%);
+}
+
+.text{
+    margin-top: 5rem;
+    color: white;
+}
+
+.text, .text > *{
+    font-size: 80px;
+    display: inline-block;
+}
+
+.red{
+    color: red;
+}
+
+.slant{
+    background-color: white;
+    min-height: 220px;
+    width: 100%;
+    transform: skewY(-5deg);
+    transform-origin: top left;
+    z-index: 1;
+}
+
+.categories{
+    color: black;
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    background-color: white;
+    z-index: 10;
+    transform: translateX(-50%);
+    padding: 0 4rem;
+    box-shadow: 0 8px 20px 0 rgba(255, 0, 0, 0.5);
+}
+
+.categories ul{
+    display: flex;
+    padding-inline-start: 0px;
+    gap: 75px;
+    padding: 1rem;
+}
+
+
+.categories li{
+    list-style: none;
+    color: red;
+    font-size: x-large;
+}
+
+.icon{
+    display: flex;
+    margin-bottom: .8rem;
+    justify-content: center;
+    color: black;
+}
+
+.icon > * {
+    transform: scale(1.5);
+}
+
