@@ -12,7 +12,7 @@ function FirstBanner() {
         <Navbar />
         <div className="pictureHolder">
             <span className="text">
-                FIGHT LIKE <br /> A <span className="red">CHAMPION</span>
+                FIGHT LIKE <br className='break'/> A <span>CHAMPION</span>
             </span>
         </div>
         <div className="categories">

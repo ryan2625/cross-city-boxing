@@ -3,7 +3,6 @@
     background-color: #171717;
     height: 700px;
     position: relative;
-    display: grid;
 }
 
 .pictureHolder{
@@ -34,10 +33,6 @@
 .text, .text > *{
     font-size: 80px;
     display: inline-block;
-}
-
-.red{
-    color: red;
 }
 
 .slant{
@@ -80,9 +75,72 @@
     margin-bottom: .8rem;
     justify-content: center;
     color: black;
+    transition: all 0.5s ease;
 }
 
 .icon > * {
     transform: scale(1.5);
 }
 
+.icon:hover{
+    transform: translateY(-10px) scale(1.6);
+    transition: all 0.3s ease;
+}
+
+@media (max-width: 900px){
+    .pictureHolder{
+        margin-left: 0;
+        background-size: contain;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2rem;
+        max-width: 100%;
+    }
+
+    .break{
+        display: none;
+    }
+
+    .text{
+        font-size: 30px;
+        white-space: nowrap;
+    }
+
+    .text span{
+        font-size: 30px;
+    }
+
+    .categories{
+        padding: 0rem .3rem
+    }
+
+    .categories ul{
+        gap: 20px;
+    }
+
+    .categories li{
+        font-size: medium;
+    }
+
+    .secondBanner{
+        flex-direction: column;
+
+    }
+
+    #fightPic{
+        max-width: 80% !important;
+        border-radius: 5px;
+    }
+
+    .lorem{
+        max-width: 80% !important;
+        margin-top: 2rem;
+        position: relative;
+    }
+
+    .lorem button{
+        position: absolute;
+        right: 0;
+    }
+}

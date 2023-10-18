@@ -48,3 +48,28 @@
     color: rgb(225, 225, 225);
     font-size: large;
 }
+
+@media (max-width:760px) {
+
+    .footer > div {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footerIcons{
+        padding: 0;
+    }
+
+    .footer > div > *{
+        margin: 1rem 0;
+    }
+
+    .firstFooter > h1{
+        font-size: 23px;
+    }
+
+    .legal{
+        font-size: 15px;
+    }
+}
